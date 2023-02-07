@@ -12,6 +12,6 @@ refs:
 2. [lambda resources are hosted internally](https://github.com/aws-amplify/amplify-hosting/issues/2254#issuecomment-1401816876)
 
 ## After assign correct IAM role to my app, why are the apis still not having permissions to access my other AWS services?
-Generally, the lambda functions have `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` automatically in there environment. You don't have to do anything for AWS SDK and it will work if you assign IAM role correctly. But the lambda@edge functions held by AWS Amplify are sadly **not** atomatically getting the role you assign to your app. The credentials will be `undefined`. That's why they are not working.
+Generally, the lambda functions have `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` automatically in there environment. You don't have to do anything with AWS SDK and it will work if you assign IAM role correctly. But the lambda@edge functions held by AWS Amplify are **sadly not** atomatically getting the role you assign to your app. The credentials will be `undefined`. That's why they are not working.
 
 refs: https://github.com/aws-amplify/amplify-hosting/issues/3205#issuecomment-1355596356
