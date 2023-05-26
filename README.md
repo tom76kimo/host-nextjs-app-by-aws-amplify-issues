@@ -5,7 +5,7 @@ Hosting Next.js app by AWS is incredible convenience, since you don't have to in
 # Questions and answers
 
 ## Where are the apis placed by AWS Amplify?
-Your files which are under directory `page/apis/*`  will be hosted by AWS [Lambda@Edge](https://aws.amazon.com/lambda/edge/). However, you **can't** find them anwhere in AWS Console, they are handled by AWS internally.
+Your files which are under directory `page/apis/*`  will be hosted by AWS [Lambda@Edge](https://aws.amazon.com/lambda/edge/). However, you **can't** find them anywhere in AWS Console, they are handled by AWS internally.
 
 refs:
 1. [Lambda@Edge functions are created in the US East (N. Virginia) Region](https://docs.aws.amazon.com/amplify/latest/userguide/ssr-nextjs11-support.html)
